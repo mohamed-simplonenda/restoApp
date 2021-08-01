@@ -14,17 +14,17 @@ module.exports={
 
     // add new Plat
     addPlat: async (req, res) => {
+      const image = req.body.image
       const nom = req.body.nom
       const type = req.body.type
-      const quantite = req.body.quantite
       const prix = req.body.prix
 
     
       try {
         plat = new PLAT({
+          image,
           nom,
           type,
-          quantite,
           prix
         });
         await plat.save();

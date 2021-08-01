@@ -1,38 +1,161 @@
 .App {
   text-align: center;
 }
+/* navbar */
+.navbar-light .navbar-nav  a {
+  font-size: 15px;
+color: #676a6a;
+text-transform: uppercase;
+-webkit-transition: all 0.5s;
+transition: all 0.5s;
+font-weight: 700;
+margin-left: 15px;
+margin-right: 15px;
+padding: 0;
+  
+}
+.navbar {
+  background-color: white !important;
+  box-shadow: 0 2px 0px 0 rgba(0,0,0,.2) !important;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+}
+.navbar-light .navbar-nav .nav-link  a{
+  color: white !important;
+
+    
+    text-decoration: none;
+    background-color: transparent;
+
+
+}
+/* description */
+.desc{
+  padding:146px  40px !important;
+}
+.desc h1{
+  color:#222222;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 52px;
+
+}
+.desc p{
+  color:#222222;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 22px;
+
+}
+.desc button{
+  background-color:#222222;
+  color:#ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 18px;
+  padding:8px 16px;
+  border-radius: 10px;
+  border: none !important;
+
+
+}
+.head{
+  background-image:url(./head.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: auto;
+  height: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* footer */
+.footer{
+  background-color: #680d0d;
+  padding-top: 50px;
+  padding-bottom: 10px;
+ 
+}
+.footer li{
+  list-style: none;
+  padding-top: 15px !important;
+  
+}
+.footer a{
+  display: block;
+  color: #ffffff;
+  position: relative;
+  padding-left: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif !important;
+  cursor: pointer;
+  transition: all 0.5s;
+  text-decoration: none;
+ 
+
+}
+.footer a:hover{
+  text-decoration: underline !important;
+  color: #717171 !important;
+}
+.footer p{
+  color: #ffffff;
+  border-bottom: 1px solid #717171;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.footer h3{
+  color: #676a6a;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
+.btnFooter {
+  background-color: white !important;
+  color: #676a6a;
+  cursor: pointer;
+  border: none;
+  border-bottom: solid 1px #cfcfcf ;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-left: -2px;
+  padding-top: 5px;
+  padding-bottom: 4px;
+}
+.icone{
+  width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #7c7e7e;
+    color: #7c7e7e;
+    display: inline-block !important;
+    border-radius: 50%;
+    padding-right:0.5rem!important;
+    font-size: 16px;
+    text-align: center;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icone:hover{
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+
+}
+.img-footer{
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+.logo-footer{
+  width: 200px;
+  height: 200px;
+  padding-top: -25px !important;
 }

@@ -10,9 +10,9 @@ app.use(express.json())
 const users = require('./router/usersRouter')
 const commande = require('./router/commandeRouter')
 const plat = require('./router/platRouter')
-app.use('/resto',users)
-app.use('/resto',commande)
-app.use('/resto',plat)
+app.use('/resto/users',users)
+app.use('/resto/commande',commande)
+app.use('/resto/plat',plat)
 
 //  Config server
 app.listen(4000,(err)=>{

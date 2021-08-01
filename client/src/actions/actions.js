@@ -1,5 +1,5 @@
 import axios from 'axios'
-import {fetchPlat} from '../request'
+import {addPlat} from '../request'
 
 
 // export function getPlat() {
@@ -35,11 +35,11 @@ export const getPlat=()=> async (dispatch)=> {
 
     // post plat
 
-    export const addMenuApi=(image, nom,type,prix )=> async (dispatch) =>{
+    export const addNewPlats=(image,nom,type,prix )=> async (dispatch) =>{
         try{
-            const res=await addNewMenu (image, nom,type,prix);
+            const res=await addPlat (image,nom,type,prix);
             dispatch ({
-                type:ADD_MENU,
+                type:"POST_PLAT_SUCCEDED",
                 payload:res.data
             })
             console.log("payload")

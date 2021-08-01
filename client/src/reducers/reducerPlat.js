@@ -31,7 +31,14 @@ const initialState={
         ...state,
         plats: payload,
         loading: false
-      }
+      };
+
+      case "POST_PLAT_SUCCEDED":
+       return {
+        ...state,
+        plats: [...state.plats, payload]
+  
+       }
       
   
 

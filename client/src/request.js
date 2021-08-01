@@ -1,4 +1,4 @@
-import Axios from "axios"
+import axios from "axios"
 
 import {
     GET_PLAT_API
@@ -6,7 +6,7 @@ import {
 } from "./shared/apiUrls"
 
 export const fetchPlat=()=>
-Axios.get(GET_PLAT_API,{
+axios.get(GET_PLAT_API,{
     Accept: 'application/json',
     'Content-Type': 'application/json',
   }).then(res=>res.data);
@@ -21,12 +21,13 @@ Axios.get(GET_PLAT_API,{
 
 
 
-const Api = axios.create({ baseURL: "http://localhost:4000/RestoApp/menu" });
+const Api = axios.create({ baseURL: "http://localhost:4000/resto/plat" });
 
 //addMenu
-function addNewMenu(title, price,image,description ) {
-    return Api.post("/post", { title, price,image,description});
+function addPlat(image,nom,type,prix ) {
+    return Api.post("/addPlat", {image,nom,type,prix});
   }
-  export default {addNewMenu,getAllMenus}
+  export  {addPlat}
+  export default {addPlat}
   
 

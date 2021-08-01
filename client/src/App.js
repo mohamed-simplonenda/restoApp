@@ -8,6 +8,7 @@ import Admin from "./component/dhashboard";
 import Footer from "./component/footer";
 import Description from "./component/description";
 import{Card,Button,Container} from 'react-bootstrap'
+import AddMenu from "./component/addPlat";
 function App() {
   
   // const [plats, setPalt] = useState([]);
@@ -57,6 +58,7 @@ function App() {
 
       </div>
     ))} */}
+    <AddMenu/>
   <Footer/>
     </div>
 )

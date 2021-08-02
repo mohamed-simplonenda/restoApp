@@ -24,12 +24,12 @@ export default function PlatList() {
 
     return (
         <div>
-            <h1>Liste des plats</h1>
+            {/* <h1 className="text-center">Liste des plats</h1> */}
 
-   <div className="d-flex justify-content-between">
-        {plats.map(plat => (<div>
+   <div className="d-flex desc text-center justify-content-between flex-wrap ">
+        {plats.map(plat => (<div className="mb-5">
           <Card style={{ width: '18rem' }}>
-  <Card.Img variant="top" src={plat.image} />
+  <Card.Img variant="top" src={plat.image} style={{ height: '16rem' }}/>
   <Card.Body>
     <Card.Title>{plat.nom}</Card.Title>
    
@@ -37,7 +37,7 @@ export default function PlatList() {
     {plat.type}<br/>
     {plat.prix}
     </Card.Text>
-    <Button variant="primary">Commander</Button>
+    <Button variant="primary">Order Now</Button>
   </Card.Body>
 </Card>
         

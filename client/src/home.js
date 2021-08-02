@@ -11,9 +11,8 @@ import{Card,Button,Container} from 'react-bootstrap'
 import AddMenu from "./component/addPlat";
 import Section1 from "./component/section1";
 import { BrowserRouter as Router, Route} from "react-router-dom";
-import Home from "./home";
 
-function App() {
+function Home() {
   
   // const [plats, setPalt] = useState([]);
   // const getPlat = () => {
@@ -31,18 +30,26 @@ function App() {
   // }, []);
   return (
     <div className='App'>
-       <Router>
-    
-    {/* <Menu /> */}
-      
-         <Route exact path="/" ><Home/> </Route>
-         <Route path="/dashboard" ><Admin/></Route>
-         
-         
-   </Router>
+  
+      <div>
+      <Menu/>
+      </div>
+      <Description/>
+      <Section1/>
      
+      
+    <Container>
+      <div>
+    <PlatList />
+     </div>
+    </Container>
+
+
+   
+    
+  <Footer/>
     </div>
 )
 }
 
-export default App;
+export default Home;

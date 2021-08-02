@@ -38,7 +38,14 @@ const initialState={
         ...state,
         plats: [...state.plats, payload]
   
-       }
+       };
+       case "DELETE_PLAT_SUCCEDED":
+			return {
+        ...state,
+        plats: state.plats.filter(
+          data => data._id !== payload
+				),
+			};
       
   
 

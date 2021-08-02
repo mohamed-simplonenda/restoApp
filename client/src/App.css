@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  background-color: #c5bcba;
+  overflow-x: hidden;
 }
 /* navbar */
 .navbar-light .navbar-nav  a {
@@ -30,10 +31,10 @@ padding: 0;
 }
 /* description */
 .desc{
-  padding:146px  40px !important;
+  padding:150px 40px 40px !important;
 }
 .desc h1{
-  color:#222222;
+  color:#4D312C;
   font-size: 60px;
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -41,7 +42,7 @@ padding: 0;
 
 }
 .desc p{
-  color:#222222;
+  color:#94817E;
   font-size: 20px;
   font-weight: 400;
   letter-spacing: -0.01em;
@@ -49,7 +50,7 @@ padding: 0;
 
 }
 .desc button{
-  background-color:#222222;
+  background-color:#4D312C;
   color:#ffffff;
   font-size: 14px;
   font-weight: 600;
@@ -71,7 +72,7 @@ padding: 0;
 
 /* footer */
 .footer{
-  background-color: #680d0d;
+  background-color: #3a2a27;
   padding-top: 50px;
   padding-bottom: 10px;
  

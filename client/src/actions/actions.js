@@ -1,5 +1,5 @@
 import axios from 'axios'
-import {addPlat} from '../request'
+import {addPlat,deleteItems} from '../request'
 
 
 // export function getPlat() {
@@ -48,3 +48,35 @@ export const getPlat=()=> async (dispatch)=> {
                   console.log(error);
                  }
     }
+
+    // delete plat 
+
+    // export const deleteProduct = productId => async dispatch => {
+    //     try {
+       
+    //         const response = await axios.delete(`http://localhost:4000/resto/plat/${productId}/deletePlat`);            
+    //       dispatch({
+    //             type: "DELETE_PLAT_SUCCEDED",
+    //             payload: response.data,
+    //         });
+    //     } catch (err) {
+    //         console.log('deleteProduct api error: ', err);
+            
+    //     }
+    // };
+
+
+
+export const deleteProduct = (id)=> async (dispatch) => {
+    try {
+      await deleteItems (id);
+      dispatch({
+        type:"DELETE_PLAT_SUCCEDED",
+        payload:id
+    })
+      console.log("delete")
+      dispatch(getPlat);
+    } catch (error) {
+      console.log(error);
+    }
+  };

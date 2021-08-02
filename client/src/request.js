@@ -29,5 +29,14 @@ function addPlat(image,nom,type,prix ) {
   }
   export  {addPlat}
   export default {addPlat}
+
+
+
+  // delete plat
+
+
+export const deleteItems=(id)=> {
+  axios.delete(`http://localhost:4000/resto/plat/${id}/deletePlat` ).then(res=>res.data) ;
+}
   
 

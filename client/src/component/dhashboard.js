@@ -55,6 +55,9 @@ import{Card,Button} from 'react-bootstrap'
 import { getCommande } from '../actions/commande'
 import AddMenu from './addPlat'
 import {deleteProduct} from '../actions/actions'
+import UpdateItem from './update'
+
+
 
 export default function Admin() {
 
@@ -76,7 +79,7 @@ export default function Admin() {
   }
 
 
-    
+  
   
   
 
@@ -107,6 +110,7 @@ export default function Admin() {
 						<i className='far fa-trash-alt pr-1'></i>
 						Delete
 					</button>
+         <UpdateItem id={plat._id}  el={plat} />
   </Card.Body>
 </Card>
         

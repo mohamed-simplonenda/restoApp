@@ -10,7 +10,7 @@ import {Row,Col,Container} from 'react-bootstrap';
            
             <Col lg={6} xs={6} sm={12}>
             <Container>
-            <div className="desc">
+            <div className="desc mt-5">
   <h1>Best way to eat 
  <br></br> healthy food</h1>
   <p>
@@ -25,6 +25,7 @@ couple of minutes.
 </div>
 </Container>
 </Col>
+
 
 <Col lg={6} xs={6} sm={12}>
 <img

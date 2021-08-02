@@ -80,3 +80,17 @@ export const deleteProduct = (id)=> async (dispatch) => {
       console.log(error);
     }
   };
+    // update Menu
+export const updateItem = (id,image,nom,type,prix) => async dispatch => {
+  try {
+    const res = await axios.put(`http://localhost:4000/resto/plat/${id}/updatePlat`,{image,nom,type,prix}).then(res=>  window.location.reload()) 
+     
+    dispatch({
+      type:  "UPDATE_PLAT_SUCCEDED", 
+      payload: res.data
+    });
+    console.log("superrr")
+  } catch (error) {
+    console.log(error);
+  }
+};
